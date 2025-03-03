@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+
 import { MessageSquare, ShoppingBag, BarChart3, Users, Send, Star, Facebook, Twitter, Instagram } from "lucide-react";
 
 const App = () => {
   // Animation variants
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: (i) => ({
+    visible: (i: any) => ({
       opacity: 1,
       y: 0,
       transition: {
